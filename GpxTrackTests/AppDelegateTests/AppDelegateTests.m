@@ -37,10 +37,17 @@
         id applicationMock = OCMClassMock([UIApplication class]);
         id nsDictionaryMock = OCMClassMock([NSDictionary class]);
         [self.delegate application:applicationMock didFinishLaunchingWithOptions:nsDictionaryMock];
-        if([self.delegate.window.rootViewController isKindOfClass:[MapGpxTrackViewController class]]) {
-            XCTAssert(TRUE, @"MapGpxTrackViewController set how root");
+        
+        if([self.delegate.window.rootViewController isKindOfClass:[UINavigationController class]]) {
+            UINavigationController *nvc = (UINavigationController*)[self.delegate.window rootViewController];
+            if([nvc.topViewController isKindOfClass:[MapGpxTrackViewController class]]) {
+                XCTAssert(TRUE, @"MapGpxTrackViewController set in UINavigationController how first");
+
+            } else {
+                XCTAssert(NO, @"MapGpxTrackViewController doesn't set in UINavigationController how first");
+            }
         } else {
-            XCTAssert(NO, @"rootViewController is not MapGpxTrackViewController");
+            XCTAssert(NO, @"rootViewController is not UINavigationController");
         }
         
     } else {

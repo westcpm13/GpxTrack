@@ -11,8 +11,6 @@
 
 @interface AppDelegate ()
 
-@property (strong,nonatomic) MapGpxTrackViewController *vc;
-
 - (void)setUpRootController;
 
 @end
@@ -30,8 +28,9 @@
 
 - (void)setUpRootController {
     
-    self.vc = [[MapGpxTrackViewController alloc] init];
-    [self.window setRootViewController: self.vc];
+    MapGpxTrackViewController *vc = [[MapGpxTrackViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController: vc];
+    [self.window setRootViewController: nvc];
     [self.window makeKeyWindow];
 }
 

@@ -10,13 +10,19 @@
 
 @interface MapGpxTrackViewController ()
 
+- (void) setUpView;
+
 @end
 
 @implementation MapGpxTrackViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void) setUpView {
     [self.view setBackgroundColor:[UIColor redColor]];
+    [self.navigationController setTitle:@"MapGpxTrack"];
 }
 
 @end

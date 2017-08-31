@@ -16,6 +16,7 @@
 		CA7F503B1F58B14D003CA162 /* AppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7F503A1F58B14D003CA162 /* AppDelegateTests.m */; };
 		CA7F50441F58BBD8003CA162 /* MapGpxTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7F50431F58BBD8003CA162 /* MapGpxTrackViewController.m */; };
 		CA7F50461F58C8BC003CA162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7F50451F58C8BC003CA162 /* Main.storyboard */; };
+		CA7F50491F58CE03003CA162 /* MapGpxTrackViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7F50481F58CE03003CA162 /* MapGpxTrackViewControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CA7F50421F58BBD8003CA162 /* MapGpxTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapGpxTrackViewController.h; sourceTree = "<group>"; };
 		CA7F50431F58BBD8003CA162 /* MapGpxTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGpxTrackViewController.m; sourceTree = "<group>"; };
 		CA7F50451F58C8BC003CA162 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CA7F50481F58CE03003CA162 /* MapGpxTrackViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGpxTrackViewControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		CA7F502D1F58ABC0003CA162 /* GpxTrackTests */ = {
 			isa = PBXGroup;
 			children = (
+				CA7F50471F58CDEB003CA162 /* MapGpxTrackViewControllerTests */,
 				CA7F50391F58B136003CA162 /* AppDelegateTests */,
 				CA7F50301F58ABC0003CA162 /* Info.plist */,
 			);
@@ -189,6 +192,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA7F50471F58CDEB003CA162 /* MapGpxTrackViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA7F50481F58CE03003CA162 /* MapGpxTrackViewControllerTests.m */,
+			);
+			path = MapGpxTrackViewControllerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7F50491F58CE03003CA162 /* MapGpxTrackViewControllerTests.m in Sources */,
 				CA7F503B1F58B14D003CA162 /* AppDelegateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
