@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "MapGpxTrackViewController.h"
 
 @interface AppDelegate ()
+
+@property (strong,nonatomic) MapGpxTrackViewController *vc;
+
+- (void)setUpRootController;
 
 @end
 
@@ -16,10 +21,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self setUpRootController];
+    
     return YES;
 }
 
+- (void)setUpRootController {
+    
+    self.vc = [[MapGpxTrackViewController alloc] init];
+    [self.window setRootViewController: self.vc];
+    [self.window makeKeyWindow];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {}
 

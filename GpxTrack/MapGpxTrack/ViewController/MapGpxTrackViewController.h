@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapGpxTrackViewController.h
 //  GpxTrack
 //
 //  Created by Pawel Trojan on 31.08.2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MapGpxTrackViewController : UIViewController
 
 @end
-
