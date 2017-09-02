@@ -10,6 +10,7 @@ target 'GpxTrack' do
   target 'GpxTrackTests' do
     inherit! :search_paths
     pod 'OCMock'
+    pod 'Masonry'
   end
 
 end

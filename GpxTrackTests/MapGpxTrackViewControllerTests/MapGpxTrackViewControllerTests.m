@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 #import "MapGpxTrackViewController.h"
+#import <OCMock/OCMock.h>
+#import "AppDelegate.h"
 
 @interface MapGpxTrackViewControllerTests : XCTestCase
 
@@ -19,7 +21,13 @@
 
 - (void)setUp {
     [super setUp];
-    self.vc = [MapGpxTrackViewController new];
+    //Test (RootController)were did AppDelegateTests
+    id applicationMock = OCMClassMock([UIApplication class]);
+    id nsDictionaryMock = OCMClassMock([NSDictionary class]);
+    AppDelegate *delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    [delegate application:applicationMock didFinishLaunchingWithOptions:nsDictionaryMock];
+    UINavigationController *nvc = (UINavigationController*)[delegate.window rootViewController];
+    self.vc = (MapGpxTrackViewController*)nvc.topViewController;
     [self.vc view];
 }
 
@@ -28,7 +36,12 @@
 }
 
 - (void)testTitle {
-    XCTAssertEqual(self.vc.navigationController.title, @"MapGpxTrack", @"check title MapGpxTrackViewController");
+    NSString *title = self.vc.navigationController.title;
+    if ([title isEqualToString:@"MapGpxTrack"]) {
+        XCTAssert(YES,@"MapGpxTrackViewController title OK");
+    } else {
+        XCTAssert(NO,@"MapGpxTrackViewController title bad");
+    }
 }
 
 

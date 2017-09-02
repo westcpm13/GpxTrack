@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setUpView];
 }
 
 - (void) setUpView {
