@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		4844A755B4496C17B82023C7 /* libPods-GpxTrack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E8CEF65CA3C610D63B728F /* libPods-GpxTrack.a */; };
 		60C80855186A45DF7EC9E7DF /* libPods-GpxTrackTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 312D6BA3C7AE8274532E80A2 /* libPods-GpxTrackTests.a */; };
+		CA1F11311F60998600F80A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1F112C1F60998600F80A84 /* Main.storyboard */; };
+		CA1F11321F60998600F80A84 /* GpxTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F112F1F60998600F80A84 /* GpxTrackViewController.m */; };
+		CA1F11351F609A3100F80A84 /* GpxTrackViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F11341F609A3100F80A84 /* GpxTrackViewControllerTests.m */; };
+		CA1F113C1F609AE100F80A84 /* MapGpxStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1F113B1F609AE100F80A84 /* MapGpxStoryboard.storyboard */; };
+		CA1F113F1F609E1400F80A84 /* MapGpxTrackViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F113E1F609E1400F80A84 /* MapGpxTrackViewControllerTests.m */; };
+		CA1F11421F609F9700F80A84 /* MapGpxTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F11411F609F9700F80A84 /* MapGpxTrackViewController.m */; };
 		CA7F50161F58ABC0003CA162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7F50151F58ABC0003CA162 /* main.m */; };
 		CA7F50191F58ABC0003CA162 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7F50181F58ABC0003CA162 /* AppDelegate.m */; };
 		CA7F50211F58ABC0003CA162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7F50201F58ABC0003CA162 /* Assets.xcassets */; };
 		CA7F50241F58ABC0003CA162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7F50221F58ABC0003CA162 /* LaunchScreen.storyboard */; };
 		CA7F503B1F58B14D003CA162 /* AppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7F503A1F58B14D003CA162 /* AppDelegateTests.m */; };
-		CA7F50441F58BBD8003CA162 /* MapGpxTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7F50431F58BBD8003CA162 /* MapGpxTrackViewController.m */; };
-		CA7F50461F58C8BC003CA162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7F50451F58C8BC003CA162 /* Main.storyboard */; };
-		CA7F50491F58CE03003CA162 /* MapGpxTrackViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7F50481F58CE03003CA162 /* MapGpxTrackViewControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,14 @@
 		27E8CEF65CA3C610D63B728F /* libPods-GpxTrack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GpxTrack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		312D6BA3C7AE8274532E80A2 /* libPods-GpxTrackTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GpxTrackTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D712B0F49FAC4886C33B67 /* Pods-GpxTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpxTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpxTrack/Pods-GpxTrack.release.xcconfig"; sourceTree = "<group>"; };
+		CA1F112C1F60998600F80A84 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CA1F112E1F60998600F80A84 /* GpxTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpxTrackViewController.h; sourceTree = "<group>"; };
+		CA1F112F1F60998600F80A84 /* GpxTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpxTrackViewController.m; sourceTree = "<group>"; };
+		CA1F11341F609A3100F80A84 /* GpxTrackViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpxTrackViewControllerTests.m; sourceTree = "<group>"; };
+		CA1F113B1F609AE100F80A84 /* MapGpxStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapGpxStoryboard.storyboard; sourceTree = "<group>"; };
+		CA1F113E1F609E1400F80A84 /* MapGpxTrackViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGpxTrackViewControllerTests.m; sourceTree = "<group>"; };
+		CA1F11401F609F9700F80A84 /* MapGpxTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapGpxTrackViewController.h; sourceTree = "<group>"; };
+		CA1F11411F609F9700F80A84 /* MapGpxTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGpxTrackViewController.m; sourceTree = "<group>"; };
 		CA7F50111F58ABC0003CA162 /* GpxTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GpxTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7F50151F58ABC0003CA162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA7F50171F58ABC0003CA162 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,10 +57,6 @@
 		CA7F502A1F58ABC0003CA162 /* GpxTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpxTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7F50301F58ABC0003CA162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA7F503A1F58B14D003CA162 /* AppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateTests.m; sourceTree = "<group>"; };
-		CA7F50421F58BBD8003CA162 /* MapGpxTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapGpxTrackViewController.h; sourceTree = "<group>"; };
-		CA7F50431F58BBD8003CA162 /* MapGpxTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGpxTrackViewController.m; sourceTree = "<group>"; };
-		CA7F50451F58C8BC003CA162 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CA7F50481F58CE03003CA162 /* MapGpxTrackViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGpxTrackViewControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +99,106 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CA1F11291F60998600F80A84 /* GpxTrack */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F112A1F60998600F80A84 /* Model */,
+				CA1F112B1F60998600F80A84 /* View */,
+				CA1F112D1F60998600F80A84 /* ViewController */,
+				CA1F11301F60998600F80A84 /* ViewModel */,
+			);
+			path = GpxTrack;
+			sourceTree = "<group>";
+		};
+		CA1F112A1F60998600F80A84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA1F112B1F60998600F80A84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F112C1F60998600F80A84 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA1F112D1F60998600F80A84 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F112E1F60998600F80A84 /* GpxTrackViewController.h */,
+				CA1F112F1F60998600F80A84 /* GpxTrackViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CA1F11301F60998600F80A84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA1F11331F609A3100F80A84 /* GpxTrackViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F11341F609A3100F80A84 /* GpxTrackViewControllerTests.m */,
+			);
+			path = GpxTrackViewControllerTests;
+			sourceTree = "<group>";
+		};
+		CA1F11361F609A9100F80A84 /* MapGpxTrack */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F11371F609A9100F80A84 /* Model */,
+				CA1F11381F609A9100F80A84 /* View */,
+				CA1F11391F609A9100F80A84 /* ViewController */,
+				CA1F113A1F609A9100F80A84 /* ViewModel */,
+			);
+			path = MapGpxTrack;
+			sourceTree = "<group>";
+		};
+		CA1F11371F609A9100F80A84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA1F11381F609A9100F80A84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F113B1F609AE100F80A84 /* MapGpxStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA1F11391F609A9100F80A84 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F11401F609F9700F80A84 /* MapGpxTrackViewController.h */,
+				CA1F11411F609F9700F80A84 /* MapGpxTrackViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CA1F113A1F609A9100F80A84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA1F113D1F609DD500F80A84 /* MapGpxTrackViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F113E1F609E1400F80A84 /* MapGpxTrackViewControllerTests.m */,
+			);
+			path = MapGpxTrackViewControllerTests;
+			sourceTree = "<group>";
+		};
 		CA7F50081F58ABC0003CA162 = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +224,8 @@
 			children = (
 				CA7F50171F58ABC0003CA162 /* AppDelegate.h */,
 				CA7F50181F58ABC0003CA162 /* AppDelegate.m */,
-				CA7F503D1F58B5D5003CA162 /* MapGpxTrack */,
+				CA1F11291F60998600F80A84 /* GpxTrack */,
+				CA1F11361F609A9100F80A84 /* MapGpxTrack */,
 				CA7F50141F58ABC0003CA162 /* Supporting Files */,
 			);
 			path = GpxTrack;
@@ -137,7 +245,8 @@
 		CA7F502D1F58ABC0003CA162 /* GpxTrackTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA7F50471F58CDEB003CA162 /* MapGpxTrackViewControllerTests */,
+				CA1F11331F609A3100F80A84 /* GpxTrackViewControllerTests */,
+				CA1F113D1F609DD500F80A84 /* MapGpxTrackViewControllerTests */,
 				CA7F50391F58B136003CA162 /* AppDelegateTests */,
 				CA7F50301F58ABC0003CA162 /* Info.plist */,
 			);
@@ -150,56 +259,6 @@
 				CA7F503A1F58B14D003CA162 /* AppDelegateTests.m */,
 			);
 			path = AppDelegateTests;
-			sourceTree = "<group>";
-		};
-		CA7F503D1F58B5D5003CA162 /* MapGpxTrack */ = {
-			isa = PBXGroup;
-			children = (
-				CA7F503E1F58BBB3003CA162 /* Model */,
-				CA7F503F1F58BBB3003CA162 /* View */,
-				CA7F50401F58BBB3003CA162 /* ViewController */,
-				CA7F50411F58BBB3003CA162 /* ViewModel */,
-			);
-			path = MapGpxTrack;
-			sourceTree = "<group>";
-		};
-		CA7F503E1F58BBB3003CA162 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CA7F503F1F58BBB3003CA162 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CA7F50451F58C8BC003CA162 /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CA7F50401F58BBB3003CA162 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CA7F50421F58BBD8003CA162 /* MapGpxTrackViewController.h */,
-				CA7F50431F58BBD8003CA162 /* MapGpxTrackViewController.m */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		CA7F50411F58BBB3003CA162 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		CA7F50471F58CDEB003CA162 /* MapGpxTrackViewControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				CA7F50481F58CE03003CA162 /* MapGpxTrackViewControllerTests.m */,
-			);
-			path = MapGpxTrackViewControllerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +311,7 @@
 		CA7F50091F58ABC0003CA162 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Pawel Trojan";
 				TargetAttributes = {
 					CA7F50101F58ABC0003CA162 = {
@@ -292,7 +351,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7F50461F58C8BC003CA162 /* Main.storyboard in Resources */,
+				CA1F113C1F609AE100F80A84 /* MapGpxStoryboard.storyboard in Resources */,
+				CA1F11311F60998600F80A84 /* Main.storyboard in Resources */,
 				CA7F50241F58ABC0003CA162 /* LaunchScreen.storyboard in Resources */,
 				CA7F50211F58ABC0003CA162 /* Assets.xcassets in Resources */,
 			);
@@ -405,9 +465,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7F50441F58BBD8003CA162 /* MapGpxTrackViewController.m in Sources */,
 				CA7F50191F58ABC0003CA162 /* AppDelegate.m in Sources */,
 				CA7F50161F58ABC0003CA162 /* main.m in Sources */,
+				CA1F11321F60998600F80A84 /* GpxTrackViewController.m in Sources */,
+				CA1F11421F609F9700F80A84 /* MapGpxTrackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +476,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7F50491F58CE03003CA162 /* MapGpxTrackViewControllerTests.m in Sources */,
+				CA1F113F1F609E1400F80A84 /* MapGpxTrackViewControllerTests.m in Sources */,
 				CA7F503B1F58B14D003CA162 /* AppDelegateTests.m in Sources */,
+				CA1F11351F609A3100F80A84 /* GpxTrackViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +514,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -460,7 +524,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -501,7 +569,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -509,7 +579,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -539,11 +613,14 @@
 			baseConfigurationReference = 16E06A2EBD0EE18FECF2562D /* Pods-GpxTrack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 588L4B3HF6;
 				INFOPLIST_FILE = GpxTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pawel.trojan.GpxTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -552,11 +629,14 @@
 			baseConfigurationReference = C4D712B0F49FAC4886C33B67 /* Pods-GpxTrack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 588L4B3HF6;
 				INFOPLIST_FILE = GpxTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pawel.trojan.GpxTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

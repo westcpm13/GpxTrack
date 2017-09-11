@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MapGpxTrackViewController.h"
+#import "GpxTrackViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +28,7 @@
 
 - (void)setUpRootController {
     
-    MapGpxTrackViewController *vc = [[MapGpxTrackViewController alloc] init];
+    GpxTrackViewController *vc = [[GpxTrackViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController: vc];
     [self.window setRootViewController: nvc];
     [self.window makeKeyWindow];

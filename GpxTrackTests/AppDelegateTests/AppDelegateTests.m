@@ -9,7 +9,7 @@
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
 #import "AppDelegate.h"
-#import "MapGpxTrackViewController.h"
+#import "GpxTrackViewController.h"
 
 @interface AppDelegateTests : XCTestCase
 
@@ -35,16 +35,16 @@
     if([self.delegate respondsToSelector:selectorSetUpRootController] == YES) {
         
         id applicationMock = OCMClassMock([UIApplication class]);
-        id nsDictionaryMock = OCMClassMock([NSDictionary class]);
+        id nsDictionaryMock = [NSDictionary new];
         [self.delegate application:applicationMock didFinishLaunchingWithOptions:nsDictionaryMock];
         
         if([self.delegate.window.rootViewController isKindOfClass:[UINavigationController class]]) {
             UINavigationController *nvc = (UINavigationController*)[self.delegate.window rootViewController];
-            if([nvc.topViewController isKindOfClass:[MapGpxTrackViewController class]]) {
-                XCTAssert(TRUE, @"MapGpxTrackViewController set in UINavigationController how first");
+            if([nvc.topViewController isKindOfClass:[GpxTrackViewController class]]) {
+                XCTAssert(TRUE, @"GpxTrackViewController set in UINavigationController how first");
 
             } else {
-                XCTAssert(NO, @"MapGpxTrackViewController doesn't set in UINavigationController how first");
+                XCTAssert(NO, @"GpxTrackViewController doesn't set in UINavigationController how first");
             }
         } else {
             XCTAssert(NO, @"rootViewController is not UINavigationController");
