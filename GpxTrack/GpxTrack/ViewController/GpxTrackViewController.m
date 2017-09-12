@@ -14,7 +14,6 @@
 
 @property (nonatomic, strong, nonnull) UILabel *authorLabel;
 @property (nonatomic, strong, nonnull) UIView *containerViewMap;
-@property (nonatomic, strong, nullable) MASConstraint *centerYconstraintAuthorLabel;
 
 - (void) setUpView;
 
@@ -41,12 +40,8 @@
     [self.view addSubview:self.authorLabel];
     
     self.authorLabel.alpha = 0;
-    __weak typeof(self) weakSelf = self;
     [self.authorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        if(weakSelf) {
-            __strong typeof(weakSelf) strongSelf = weakSelf;
-            strongSelf.centerYconstraintAuthorLabel = make.centerY.equalTo(self.view).offset(-8);
-        }
+        make.centerY.equalTo(self.view).offset(-8);
         make.centerX.equalTo(self.view);
     }];
 }
@@ -61,13 +56,9 @@
     self.containerViewMap = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     [self.view addSubview: self.containerViewMap];
 
-    __weak typeof(self) weakSelf = self;
     
     [self.containerViewMap mas_makeConstraints:^(MASConstraintMaker *make) {
-        if (weakSelf) {
-            __strong typeof(weakSelf) strongSelf = weakSelf;
-            strongSelf.centerYconstraintAuthorLabel = make.top.equalTo(self.view.mas_top).with.offset(64);
-        }
+        make.top.equalTo(self.view.mas_top).with.offset(64);
         make.leading.equalTo(self.view.mas_leading).with.offset(0);
         make.trailing.equalTo(self.view.mas_trailing).with.offset(0);
         make.height.equalTo(@(self.view.frame.size.height - 64));

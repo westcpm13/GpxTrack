@@ -20,6 +20,10 @@
 		CA7F50211F58ABC0003CA162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7F50201F58ABC0003CA162 /* Assets.xcassets */; };
 		CA7F50241F58ABC0003CA162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7F50221F58ABC0003CA162 /* LaunchScreen.storyboard */; };
 		CA7F503B1F58B14D003CA162 /* AppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7F503A1F58B14D003CA162 /* AppDelegateTests.m */; };
+		FD8730171F6839B2001C59B1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8730161F6839B2001C59B1 /* MapKit.framework */; };
+		FD87301C1F683ED7001C59B1 /* Track 110-02-31 23-46 Bardeler Weg.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FD8730191F683ED7001C59B1 /* Track 110-02-31 23-46 Bardeler Weg.gpx */; };
+		FD87301D1F683ED7001C59B1 /* Track 110-03-01 02-56.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FD87301A1F683ED7001C59B1 /* Track 110-03-01 02-56.gpx */; };
+		FD87301E1F683ED7001C59B1 /* Track 110-03-01 05-06.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FD87301B1F683ED7001C59B1 /* Track 110-03-01 05-06.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		CA7F502A1F58ABC0003CA162 /* GpxTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpxTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7F50301F58ABC0003CA162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA7F503A1F58B14D003CA162 /* AppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateTests.m; sourceTree = "<group>"; };
+		FD8730161F6839B2001C59B1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FD8730191F683ED7001C59B1 /* Track 110-02-31 23-46 Bardeler Weg.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Track 110-02-31 23-46 Bardeler Weg.gpx"; sourceTree = "<group>"; };
+		FD87301A1F683ED7001C59B1 /* Track 110-03-01 02-56.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Track 110-03-01 02-56.gpx"; sourceTree = "<group>"; };
+		FD87301B1F683ED7001C59B1 /* Track 110-03-01 05-06.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Track 110-03-01 05-06.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8730171F6839B2001C59B1 /* MapKit.framework in Frameworks */,
 				4844A755B4496C17B82023C7 /* libPods-GpxTrack.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +102,7 @@
 		5A2E9DAB893EFD7B06688FA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD8730161F6839B2001C59B1 /* MapKit.framework */,
 				27E8CEF65CA3C610D63B728F /* libPods-GpxTrack.a */,
 				312D6BA3C7AE8274532E80A2 /* libPods-GpxTrackTests.a */,
 			);
@@ -224,6 +234,7 @@
 			children = (
 				CA7F50171F58ABC0003CA162 /* AppDelegate.h */,
 				CA7F50181F58ABC0003CA162 /* AppDelegate.m */,
+				FD8730181F683ED7001C59B1 /* DataGpx */,
 				CA1F11291F60998600F80A84 /* GpxTrack */,
 				CA1F11361F609A9100F80A84 /* MapGpxTrack */,
 				CA7F50141F58ABC0003CA162 /* Supporting Files */,
@@ -259,6 +270,16 @@
 				CA7F503A1F58B14D003CA162 /* AppDelegateTests.m */,
 			);
 			path = AppDelegateTests;
+			sourceTree = "<group>";
+		};
+		FD8730181F683ED7001C59B1 /* DataGpx */ = {
+			isa = PBXGroup;
+			children = (
+				FD8730191F683ED7001C59B1 /* Track 110-02-31 23-46 Bardeler Weg.gpx */,
+				FD87301A1F683ED7001C59B1 /* Track 110-03-01 02-56.gpx */,
+				FD87301B1F683ED7001C59B1 /* Track 110-03-01 05-06.gpx */,
+			);
+			path = DataGpx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +373,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA1F113C1F609AE100F80A84 /* MapGpxStoryboard.storyboard in Resources */,
+				FD87301C1F683ED7001C59B1 /* Track 110-02-31 23-46 Bardeler Weg.gpx in Resources */,
+				FD87301E1F683ED7001C59B1 /* Track 110-03-01 05-06.gpx in Resources */,
 				CA1F11311F60998600F80A84 /* Main.storyboard in Resources */,
+				FD87301D1F683ED7001C59B1 /* Track 110-03-01 02-56.gpx in Resources */,
 				CA7F50241F58ABC0003CA162 /* LaunchScreen.storyboard in Resources */,
 				CA7F50211F58ABC0003CA162 /* Assets.xcassets in Resources */,
 			);

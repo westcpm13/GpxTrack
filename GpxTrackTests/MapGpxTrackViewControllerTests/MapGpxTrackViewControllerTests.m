@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "MapGpxTrackViewController.h"
+#import <MapKit/MapKit.h>
 
 @interface MapGpxTrackViewControllerTests : XCTestCase
 
@@ -32,5 +33,17 @@
 - (void)testMapGpxTrackViewControllerNotNil {
     XCTAssertNotNil(self.vc,@"vc = nil");
 }
+
+- (void)testIfMapViewAddedToView {
+    BOOL ifMapViewAddedToView = NO;
+    NSArray *subviews = [self.vc.view subviews];
+    for(id subview in subviews) {
+        if([subview isMemberOfClass:[MKMapView class]]) {
+            ifMapViewAddedToView = YES;
+        }
+    }
+    XCTAssertTrue(ifMapViewAddedToView, "MapGpxTrackViewController not added");
+}
+
 
 @end

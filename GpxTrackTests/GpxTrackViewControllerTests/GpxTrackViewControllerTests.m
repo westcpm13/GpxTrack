@@ -62,10 +62,21 @@
     XCTAssertNotNil(mapVC,"MapGpxTrackViewController = nil error!");
 }
 
-- (void)testTitleAutohorLabel {
+- (void)testTitleAuthorLabel {
     NSString *authorTitle = self.vc.authorLabel.text;
     XCTAssertEqualObjects(authorTitle, @"Author Pawel Trojan \n project shows track path from gpx files", @"authorLabel title is bad");
 }
 
+- (void)testIfAddedChildViewController_MapGpxTrackViewController {
+    BOOL ifAddedMapGpxTrackViewController = NO;
+    NSArray *childViewControllers = [self.vc childViewControllers];
+    for(id vc in childViewControllers) {
+        if([vc isMemberOfClass:[MapGpxTrackViewController class]]) {
+            ifAddedMapGpxTrackViewController = YES;
+        }
+    }
+    XCTAssertTrue(ifAddedMapGpxTrackViewController, "MapGpxTrackViewController not added");
+    
+}
 
 @end
