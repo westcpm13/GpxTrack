@@ -64,7 +64,7 @@
 
 - (void)testTitleAutohorLabel {
     NSString *authorTitle = self.vc.authorLabel.text;
-    XCTAssertEqualObjects(authorTitle, @"Author Pawel Trojan \n project shows path from gpx files", @"authorLabel title is bad");
+    XCTAssertEqualObjects(authorTitle, @"Author Pawel Trojan \n project shows track path from gpx files", @"authorLabel title is bad");
 }
 
 
