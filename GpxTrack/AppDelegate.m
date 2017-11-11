@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "GpxTrackViewController.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -19,10 +21,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    [Fabric with:@[[Crashlytics class]]];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self setUpRootController];
-    
+
     return YES;
 }
 
