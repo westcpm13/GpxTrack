@@ -20,6 +20,8 @@
 		CA7F50211F58ABC0003CA162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7F50201F58ABC0003CA162 /* Assets.xcassets */; };
 		CA7F50241F58ABC0003CA162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7F50221F58ABC0003CA162 /* LaunchScreen.storyboard */; };
 		CA7F503B1F58B14D003CA162 /* AppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7F503A1F58B14D003CA162 /* AppDelegateTests.m */; };
+		CACE7F001F69BC0D0048E2D0 /* ParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CACE7EFF1F69BC0D0048E2D0 /* ParserTest.m */; };
+		CACE7F031F69CAAF0048E2D0 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = CACE7F021F69CAAF0048E2D0 /* Parser.m */; };
 		FD8730171F6839B2001C59B1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8730161F6839B2001C59B1 /* MapKit.framework */; };
 		FD87301C1F683ED7001C59B1 /* Track 110-02-31 23-46 Bardeler Weg.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FD8730191F683ED7001C59B1 /* Track 110-02-31 23-46 Bardeler Weg.gpx */; };
 		FD87301D1F683ED7001C59B1 /* Track 110-03-01 02-56.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FD87301A1F683ED7001C59B1 /* Track 110-03-01 02-56.gpx */; };
@@ -61,6 +63,9 @@
 		CA7F502A1F58ABC0003CA162 /* GpxTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpxTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7F50301F58ABC0003CA162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA7F503A1F58B14D003CA162 /* AppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateTests.m; sourceTree = "<group>"; };
+		CACE7EFF1F69BC0D0048E2D0 /* ParserTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParserTest.m; sourceTree = "<group>"; };
+		CACE7F011F69CAAF0048E2D0 /* Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		CACE7F021F69CAAF0048E2D0 /* Parser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
 		FD8730161F6839B2001C59B1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FD8730191F683ED7001C59B1 /* Track 110-02-31 23-46 Bardeler Weg.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Track 110-02-31 23-46 Bardeler Weg.gpx"; sourceTree = "<group>"; };
 		FD87301A1F683ED7001C59B1 /* Track 110-03-01 02-56.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Track 110-03-01 02-56.gpx"; sourceTree = "<group>"; };
@@ -235,6 +240,7 @@
 				CA7F50171F58ABC0003CA162 /* AppDelegate.h */,
 				CA7F50181F58ABC0003CA162 /* AppDelegate.m */,
 				FD8730181F683ED7001C59B1 /* DataGpx */,
+				CACE7EFD1F69B31F0048E2D0 /* ParserXml */,
 				CA1F11291F60998600F80A84 /* GpxTrack */,
 				CA1F11361F609A9100F80A84 /* MapGpxTrack */,
 				CA7F50141F58ABC0003CA162 /* Supporting Files */,
@@ -256,6 +262,7 @@
 		CA7F502D1F58ABC0003CA162 /* GpxTrackTests */ = {
 			isa = PBXGroup;
 			children = (
+				CACE7EFE1F69BBB30048E2D0 /* ParserTests */,
 				CA1F11331F609A3100F80A84 /* GpxTrackViewControllerTests */,
 				CA1F113D1F609DD500F80A84 /* MapGpxTrackViewControllerTests */,
 				CA7F50391F58B136003CA162 /* AppDelegateTests */,
@@ -270,6 +277,23 @@
 				CA7F503A1F58B14D003CA162 /* AppDelegateTests.m */,
 			);
 			path = AppDelegateTests;
+			sourceTree = "<group>";
+		};
+		CACE7EFD1F69B31F0048E2D0 /* ParserXml */ = {
+			isa = PBXGroup;
+			children = (
+				CACE7F011F69CAAF0048E2D0 /* Parser.h */,
+				CACE7F021F69CAAF0048E2D0 /* Parser.m */,
+			);
+			path = ParserXml;
+			sourceTree = "<group>";
+		};
+		CACE7EFE1F69BBB30048E2D0 /* ParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				CACE7EFF1F69BC0D0048E2D0 /* ParserTest.m */,
+			);
+			path = ParserTests;
 			sourceTree = "<group>";
 		};
 		FD8730181F683ED7001C59B1 /* DataGpx */ = {
@@ -493,6 +517,7 @@
 				CA7F50161F58ABC0003CA162 /* main.m in Sources */,
 				CA1F11321F60998600F80A84 /* GpxTrackViewController.m in Sources */,
 				CA1F11421F609F9700F80A84 /* MapGpxTrackViewController.m in Sources */,
+				CACE7F031F69CAAF0048E2D0 /* Parser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACE7F001F69BC0D0048E2D0 /* ParserTest.m in Sources */,
 				CA1F113F1F609E1400F80A84 /* MapGpxTrackViewControllerTests.m in Sources */,
 				CA7F503B1F58B14D003CA162 /* AppDelegateTests.m in Sources */,
 				CA1F11351F609A3100F80A84 /* GpxTrackViewControllerTests.m in Sources */,

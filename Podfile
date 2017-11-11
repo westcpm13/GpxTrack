@@ -7,6 +7,8 @@ target 'GpxTrack' do
   # Pods for GpxTrack
 
     pod 'Masonry'
+    pod 'Fabric'
+    pod 'Crashlytics'
   target 'GpxTrackTests' do
     inherit! :search_paths
     pod 'OCMock'
